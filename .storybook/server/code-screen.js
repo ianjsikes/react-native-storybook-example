@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {View, Text, TextInput, TouchableOpacity, AsyncStorage} from 'react-native';
-import {getStorybookUI} from '@kadira/react-native-storybook';
+import {getStorybookUI} from '@storybook/react-native';
 
 function getInitialState() {
   return {
     data: {
       code: '',
-      port: '',//'7007',
-      host: 'frozen-garden-86158.herokuapp.com',
+      port: '7007',
+      host: 'localhost',
       usePort: false,
       secured: true,
     },
@@ -173,7 +173,7 @@ export default class CodeScreen extends Component {
         </View>
         }
         { this.state.showStorybook &&
-        <View display={{flex: 1}}>
+        <View style={{flex: 1}}>
           <TouchableOpacity onPress={() => this.onPressBack()}>
             <Text style={{fontSize: 20, marginTop: 20, position: 'absolute', right: 0}}>Back</Text>
           </TouchableOpacity>

@@ -1,4 +1,8 @@
-import '@kadira/react-native-storybook/addons';
-import '@kadira/storybook-addon-knobs/register';
+import React from 'react'
+import addons from '@storybook/addons';
+addons.setPreview(() => <div></div>);
+
+import '@storybook/react-native/addons';
+import '@storybook/addon-knobs/register';
 import 'storybook-usage/register';
-import 'react-storybook-addon-docgen/dist/register';
+//import 'react-storybook-addon-docgen/dist/register';

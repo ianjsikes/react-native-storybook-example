@@ -2,7 +2,7 @@ require('es6-symbol/implement');
 global.STORYBOOK_REACT_CLASSES = {};
 
 import {AppRegistry} from 'react-native';
-import {configure} from '@kadira/react-native-storybook';
+import {configure} from '@storybook/react-native';
 import CodeScreen from './code-screen';
 import '../add-decorators';
 

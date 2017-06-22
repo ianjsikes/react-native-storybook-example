@@ -1,8 +1,7 @@
 import React from 'react';
 
-import VSplit from '@kadira/storybook-ui/dist/modules/ui/components/layout/vsplit';
-import HSplit from '@kadira/storybook-ui/dist/modules/ui/components/layout/hsplit';
-import SplitPane from '@kadira/react-split-pane';
+import VSplit from '@storybook/ui/dist/modules/ui/components/layout/usplit';
+import SplitPane from 'react-split-pane';
 
 const rootStyle = {
   height: '100vh',
@@ -57,7 +56,6 @@ const fullScreenPreviewStyle = {
 
 
 const vsplit = <VSplit />;
-const hsplit = <HSplit />;
 
 const onDragStart = function () {
   document.body.classList.add('dragging');
